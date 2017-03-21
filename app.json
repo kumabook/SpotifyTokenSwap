@@ -1,0 +1,34 @@
+{
+  "name": "Spotify swap token",
+  "description": "",
+  "keywords": ["spotify"],
+  "repository": "https://github.com/kumabook/SpotifyTokenSwap",
+  "scripts": {},
+  "env": {
+    "CLIENT_ID": {
+      "description": "A client id of spotify api",
+      "value": "xxxx"
+    },
+    "CLIENT_SECRET": {
+      "description": "A client secret of spotify api",
+      "value": "xxxx"
+    },
+    "CLIENT_CALLBACK_URL": {
+      "description": "callback url of spotify api",
+      "value": "http://callback"
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "image": "heroku/ruby",
+  "addons": [],
+  "buildpacks": [
+    {
+      "url": "heroku/ruby"
+    }
+  ]
+}
